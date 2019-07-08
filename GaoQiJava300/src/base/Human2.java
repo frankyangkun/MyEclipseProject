@@ -1,5 +1,5 @@
 package base;
-//测试封装
+//测试封装123
 public class Human2{
 	private int age;
 	String name;
