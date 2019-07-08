@@ -1,5 +1,6 @@
 package base;
 //九九乘法表
+//git远端修改测试
 public class MultiplicationTable {
 
 	public static void main(String[] args) {
