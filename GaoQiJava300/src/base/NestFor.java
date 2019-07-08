@@ -1,6 +1,6 @@
 package base;
 //嵌套循环
-//git远端修改--冲突测试
+//git本地修改2--冲突测试
 public class NestFor {
 
 	public static void main(String[] args) {
