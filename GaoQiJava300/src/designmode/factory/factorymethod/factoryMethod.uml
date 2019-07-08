@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_qb8akM37EdqwVrslYOdUDA" name="factoryMethod">
+  <packagedElement xmi:type="uml:Package" xmi:id="_EET-8IafEemr-bfnZVi9dA" name="designmode">
+    <packagedElement xmi:type="uml:Package" xmi:id="_EET-8YafEemr-bfnZVi9dA" name="factory">
+      <packagedElement xmi:type="uml:Package" xmi:id="_EET-8oafEemr-bfnZVi9dA" name="factorymethod">
+        <packagedElement xmi:type="uml:Interface" xmi:id="_EET-84afEemr-bfnZVi9dA" name="Car"/>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_GaEVY4afEemr-bfnZVi9dA" name="CarFactory"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_RwEkUIafEemr-bfnZVi9dA" name="Audi" clientDependency="_Rw4coYafEemr-bfnZVi9dA">
+          <interfaceRealization xmi:id="_Rw4coYafEemr-bfnZVi9dA" name="Car" client="_RwEkUIafEemr-bfnZVi9dA">
+            <supplier xmi:type="uml:Interface" href="../../../../factoryMethod.uml#_Rw4coIafEemr-bfnZVi9dA"/>
+            <contract href="../../../../factoryMethod.uml#_Rw4coIafEemr-bfnZVi9dA"/>
+          </interfaceRealization>
+          <ownedOperation xmi:id="_Rw4cooafEemr-bfnZVi9dA" name="run" visibility="public"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_SquOsIafEemr-bfnZVi9dA" name="Byd" clientDependency="_Sr8WsYafEemr-bfnZVi9dA">
+          <interfaceRealization xmi:id="_Sr8WsYafEemr-bfnZVi9dA" name="Car" client="_SquOsIafEemr-bfnZVi9dA">
+            <supplier xmi:type="uml:Interface" href="../../../../factoryMethod.uml#_Sr8WsIafEemr-bfnZVi9dA"/>
+            <contract href="../../../../factoryMethod.uml#_Sr8WsIafEemr-bfnZVi9dA"/>
+          </interfaceRealization>
+          <ownedOperation xmi:id="_Sr8WsoafEemr-bfnZVi9dA" name="run" visibility="public"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_UOpflIafEemr-bfnZVi9dA" name="AudiFactory" clientDependency="_UPX4UYafEemr-bfnZVi9dA _4VXPEIafEemr-bfnZVi9dA">
+          <interfaceRealization xmi:id="_UPX4UYafEemr-bfnZVi9dA" name="CarFactory" client="_UOpflIafEemr-bfnZVi9dA">
+            <supplier xmi:type="uml:Interface" href="../../../../factoryMethod.uml#_UPX4UIafEemr-bfnZVi9dA"/>
+            <contract href="../../../../factoryMethod.uml#_UPX4UIafEemr-bfnZVi9dA"/>
+          </interfaceRealization>
+          <ownedOperation xmi:id="_UPX4U4afEemr-bfnZVi9dA" name="createCar" visibility="public">
+            <ownedParameter xmi:id="_UPX4VIafEemr-bfnZVi9dA" name="return" direction="return"/>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_UOqGoIafEemr-bfnZVi9dA" name="BydFactory" clientDependency="_UPYfYIafEemr-bfnZVi9dA _5ZciQIafEemr-bfnZVi9dA">
+          <interfaceRealization xmi:id="_UPYfYIafEemr-bfnZVi9dA" name="CarFactory" client="_UOqGoIafEemr-bfnZVi9dA">
+            <supplier xmi:type="uml:Interface" href="../../../../factoryMethod.uml#_UPX4UIafEemr-bfnZVi9dA"/>
+            <contract href="../../../../factoryMethod.uml#_UPX4UIafEemr-bfnZVi9dA"/>
+          </interfaceRealization>
+          <ownedOperation xmi:id="_UPYfYYafEemr-bfnZVi9dA" name="createCar" visibility="public">
+            <ownedParameter xmi:id="_UPYfYoafEemr-bfnZVi9dA" name="return" direction="return"/>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_pafyQIafEemr-bfnZVi9dA" name="Client" clientDependency="_2JgmEIagEemr-bfnZVi9dA _58DqoIagEemr-bfnZVi9dA _6isM0IagEemr-bfnZVi9dA">
+          <ownedOperation xmi:id="_pbQAMYafEemr-bfnZVi9dA" name="main" visibility="public" isStatic="true">
+            <ownedParameter xmi:id="_pbQAMoafEemr-bfnZVi9dA" name="args">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_pbQAM4afEemr-bfnZVi9dA" value="*"/>
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_pbQANIafEemr-bfnZVi9dA"/>
+            </ownedParameter>
+          </ownedOperation>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_4VXPEIafEemr-bfnZVi9dA" name="Usage1" supplier="_RwEkUIafEemr-bfnZVi9dA" client="_UOpflIafEemr-bfnZVi9dA"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_5ZciQIafEemr-bfnZVi9dA" name="Usage2" supplier="_SquOsIafEemr-bfnZVi9dA" client="_UOqGoIafEemr-bfnZVi9dA"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_2JgmEIagEemr-bfnZVi9dA" name="Usage3" supplier="_GaEVY4afEemr-bfnZVi9dA" client="_pafyQIafEemr-bfnZVi9dA"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_58DqoIagEemr-bfnZVi9dA" name="Usage4" supplier="_UOqGoIafEemr-bfnZVi9dA" client="_pafyQIafEemr-bfnZVi9dA"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_6isM0IagEemr-bfnZVi9dA" name="Usage5" supplier="_UOpflIafEemr-bfnZVi9dA" client="_pafyQIafEemr-bfnZVi9dA"/>
+</uml:Model>

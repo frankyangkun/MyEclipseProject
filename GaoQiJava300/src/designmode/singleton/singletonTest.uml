@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_qb8akM37EdqwVrslYOdUDA" name="singletonTest">
+  <packagedElement xmi:type="uml:Package" xmi:id="_Lt5AgIXQEemr-bfnZVi9dA" name="designmode">
+    <packagedElement xmi:type="uml:Class" xmi:id="_Lt7cwIXQEemr-bfnZVi9dA" name="Singleton1">
+      <ownedComment xmi:id="_Lt9R8IXQEemr-bfnZVi9dA">
+        <body>/** 
+ * 测试饿汉式单例模式 
+ * @author yang
+ */
+</body>
+      </ownedComment>
+      <ownedAttribute xmi:id="_Lu9-kIXQEemr-bfnZVi9dA" name="instance" visibility="private" isStatic="true" type="_Lt7cwIXQEemr-bfnZVi9dA"/>
+      <ownedOperation xmi:id="_LvLZ8IXQEemr-bfnZVi9dA" name="getInstance" visibility="public" isStatic="true">
+        <ownedParameter xmi:id="_LvLZ8YXQEemr-bfnZVi9dA" name="return" type="_Lt7cwIXQEemr-bfnZVi9dA" direction="return"/>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_W6Qq8IXTEemr-bfnZVi9dA" name="Client" clientDependency="_KksnAIXUEemr-bfnZVi9dA">
+      <ownedOperation xmi:id="_W8zBkIXTEemr-bfnZVi9dA" name="main" visibility="public" isStatic="true">
+        <ownedParameter xmi:id="_W8zBkYXTEemr-bfnZVi9dA" name="args">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_W8zBkoXTEemr-bfnZVi9dA" value="*"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_W8zBk4XTEemr-bfnZVi9dA"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_KksnAIXUEemr-bfnZVi9dA" name="Usage1" supplier="_Lt7cwIXQEemr-bfnZVi9dA" client="_W6Qq8IXTEemr-bfnZVi9dA"/>
+</uml:Model>

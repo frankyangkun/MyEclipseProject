@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_qb8akM37EdqwVrslYOdUDA" name="adapter">
+  <packagedElement xmi:type="uml:Package" xmi:id="_x6rJoIgKEemi-cw_rYK9Hw" name="designmode">
+    <packagedElement xmi:type="uml:Package" xmi:id="_x6rwsIgKEemi-cw_rYK9Hw" name="adapter">
+      <packagedElement xmi:type="uml:Class" xmi:id="_x6rwsYgKEemi-cw_rYK9Hw" name="Adaptee">
+        <ownedComment xmi:id="_x6tl4IgKEemi-cw_rYK9Hw">
+          <body>/** 
+ * 被适配的类 （相当于例子中的ps/2键盘）
+ * @author yang
+ */
+</body>
+        </ownedComment>
+        <ownedOperation xmi:id="_x7aJcIgKEemi-cw_rYK9Hw" name="request" visibility="public"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Interface" xmi:id="_x6tl4YgKEemi-cw_rYK9Hw" name="Target">
+        <ownedOperation xmi:id="_x7awgIgKEemi-cw_rYK9Hw" name="handleReq" visibility="public"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_x6uM8IgKEemi-cw_rYK9Hw" name="Client" clientDependency="_LLREIIgLEemi-cw_rYK9Hw">
+        <ownedComment xmi:id="_x6uM8YgKEemi-cw_rYK9Hw">
+          <body>/** 
+ * 客户端类 （相当于例子中的笔记本电脑，只有USB接口）
+ * @author yang
+ */
+</body>
+        </ownedComment>
+        <ownedOperation xmi:id="_x7awgYgKEemi-cw_rYK9Hw" name="test1" visibility="public">
+          <ownedParameter xmi:id="_x7bXkIgKEemi-cw_rYK9Hw" name="t" type="_x6tl4YgKEemi-cw_rYK9Hw"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_x754sIgKEemi-cw_rYK9Hw" name="main" visibility="public" isStatic="true">
+          <ownedParameter xmi:id="_x754sYgKEemi-cw_rYK9Hw" name="args">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_x754sogKEemi-cw_rYK9Hw" value="*"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_x754s4gKEemi-cw_rYK9Hw"/>
+          </ownedParameter>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_x6uM8ogKEemi-cw_rYK9Hw" name="Adapter2" clientDependency="_x76fwIgKEemi-cw_rYK9Hw _HIX2cIgLEemi-cw_rYK9Hw">
+        <ownedComment xmi:id="_x6u0AIgKEemi-cw_rYK9Hw">
+          <body>/** 
+ * 适配器(对象适配器方式，使用了组合的方式跟被适配对象整合) （相当于例子中的USB和ps/2的转接器）
+ * @author yang
+ */
+</body>
+        </ownedComment>
+        <ownedAttribute xmi:id="_x77t4IgKEemi-cw_rYK9Hw" name="adaptee" visibility="private" type="_x6rwsYgKEemi-cw_rYK9Hw"/>
+        <interfaceRealization xmi:id="_x76fwIgKEemi-cw_rYK9Hw" name="Target" supplier="_x6tl4YgKEemi-cw_rYK9Hw" client="_x6uM8ogKEemi-cw_rYK9Hw" contract="_x6tl4YgKEemi-cw_rYK9Hw"/>
+        <ownedOperation xmi:id="_x78U8IgKEemi-cw_rYK9Hw" name="handleReq" visibility="public"/>
+      </packagedElement>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_HIX2cIgLEemi-cw_rYK9Hw" name="Usage1" supplier="_x6rwsYgKEemi-cw_rYK9Hw" client="_x6uM8ogKEemi-cw_rYK9Hw"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_LLREIIgLEemi-cw_rYK9Hw" name="Usage2" supplier="_x6tl4YgKEemi-cw_rYK9Hw" client="_x6uM8IgKEemi-cw_rYK9Hw"/>
+</uml:Model>

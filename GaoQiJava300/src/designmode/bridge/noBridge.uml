@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_qCfqMIswEemi-cw_rYK9Hw">
+  <name xsi:nil="true"/>
+  <packagedElement xmi:type="uml:Package" xmi:id="_qCjUkIswEemi-cw_rYK9Hw" name="designmode">
+    <packagedElement xmi:type="uml:Package" xmi:id="_qCj7oIswEemi-cw_rYK9Hw" name="bridge">
+      <packagedElement xmi:type="uml:Interface" xmi:id="_qCkisIswEemi-cw_rYK9Hw" name="Computer">
+        <ownedOperation xmi:id="_qDcscIswEemi-cw_rYK9Hw" name="sale" visibility="public"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_qCm-8IswEemi-cw_rYK9Hw" name="Desktop" visibility="package" clientDependency="_qDcscYswEemi-cw_rYK9Hw">
+        <interfaceRealization xmi:id="_qDcscYswEemi-cw_rYK9Hw" name="Computer" supplier="_qCkisIswEemi-cw_rYK9Hw" client="_qCm-8IswEemi-cw_rYK9Hw" contract="_qCkisIswEemi-cw_rYK9Hw"/>
+        <ownedOperation xmi:id="_qDd6kIswEemi-cw_rYK9Hw" name="sale" visibility="public"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_qCnmAIswEemi-cw_rYK9Hw" name="Laptop" visibility="package" clientDependency="_qDehoIswEemi-cw_rYK9Hw">
+        <interfaceRealization xmi:id="_qDehoIswEemi-cw_rYK9Hw" name="Computer" supplier="_qCkisIswEemi-cw_rYK9Hw" client="_qCnmAIswEemi-cw_rYK9Hw" contract="_qCkisIswEemi-cw_rYK9Hw"/>
+        <ownedOperation xmi:id="_qDfIsIswEemi-cw_rYK9Hw" name="sale" visibility="public"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_qCnmAYswEemi-cw_rYK9Hw" name="Pad" visibility="package" clientDependency="_qDfIsYswEemi-cw_rYK9Hw">
+        <interfaceRealization xmi:id="_qDfIsYswEemi-cw_rYK9Hw" name="Computer" supplier="_qCkisIswEemi-cw_rYK9Hw" client="_qCnmAYswEemi-cw_rYK9Hw" contract="_qCkisIswEemi-cw_rYK9Hw"/>
+        <ownedOperation xmi:id="_qDfIsoswEemi-cw_rYK9Hw" name="sale" visibility="public"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_qCoNEIswEemi-cw_rYK9Hw" name="LenovoDesktop" visibility="package">
+        <generalization xmi:id="_qDfvwIswEemi-cw_rYK9Hw" general="_qCm-8IswEemi-cw_rYK9Hw"/>
+        <ownedOperation xmi:id="_qDgW0IswEemi-cw_rYK9Hw" name="sale" visibility="public"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_qCoNEYswEemi-cw_rYK9Hw" name="LenovoTop" visibility="package">
+        <generalization xmi:id="_qDg94IswEemi-cw_rYK9Hw" general="_qCm-8IswEemi-cw_rYK9Hw"/>
+        <ownedOperation xmi:id="_qDg94YswEemi-cw_rYK9Hw" name="sale" visibility="public"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_qCo0IIswEemi-cw_rYK9Hw" name="LenovoPad" visibility="package">
+        <generalization xmi:id="_qDg94oswEemi-cw_rYK9Hw" general="_qCnmAYswEemi-cw_rYK9Hw"/>
+        <ownedOperation xmi:id="_qDg944swEemi-cw_rYK9Hw" name="sale" visibility="public"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_qCpbMIswEemi-cw_rYK9Hw" name="ShenzhouDesktop" visibility="package">
+        <generalization xmi:id="_qDhk8IswEemi-cw_rYK9Hw" general="_qCm-8IswEemi-cw_rYK9Hw"/>
+        <ownedOperation xmi:id="_qDhk8YswEemi-cw_rYK9Hw" name="sale" visibility="public"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_qCpbMYswEemi-cw_rYK9Hw" name="ShenzhouTop" visibility="package">
+        <generalization xmi:id="_qDhk8oswEemi-cw_rYK9Hw" general="_qCm-8IswEemi-cw_rYK9Hw"/>
+        <ownedOperation xmi:id="_qDiMAIswEemi-cw_rYK9Hw" name="sale" visibility="public"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_qCqCQIswEemi-cw_rYK9Hw" name="ShenzhouPad" visibility="package">
+        <generalization xmi:id="_qDiMAYswEemi-cw_rYK9Hw" general="_qCnmAYswEemi-cw_rYK9Hw"/>
+        <ownedOperation xmi:id="_qDiMAoswEemi-cw_rYK9Hw" name="sale" visibility="public"/>
+      </packagedElement>
+    </packagedElement>
+  </packagedElement>
+</uml:Model>

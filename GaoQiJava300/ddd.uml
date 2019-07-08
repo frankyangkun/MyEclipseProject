@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_Sg6kcIwbEem8JdWhRl5ekg">
+  <name xsi:nil="true"/>
+  <elementImport xmi:id="_Slh-sIwbEem8JdWhRl5ekg">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+  </elementImport>
+  <packagedElement xmi:type="uml:Package" xmi:id="_Sg_c8IwbEem8JdWhRl5ekg" name="designmode">
+    <packagedElement xmi:type="uml:Package" xmi:id="_Sg_c8YwbEem8JdWhRl5ekg" name="decorator">
+      <packagedElement xmi:type="uml:Class" xmi:id="_ShAEAIwbEem8JdWhRl5ekg" name="Client">
+        <ownedOperation xmi:id="_SlilwIwbEem8JdWhRl5ekg" name="main" visibility="public" isStatic="true">
+          <ownedParameter xmi:id="_SlilwYwbEem8JdWhRl5ekg" name="args">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_SlilwowbEem8JdWhRl5ekg" value="*"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Slilw4wbEem8JdWhRl5ekg"/>
+          </ownedParameter>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Interface" xmi:id="_ShBSIIwbEem8JdWhRl5ekg" name="ICar">
+        <ownedComment xmi:id="_ShCgQIwbEem8JdWhRl5ekg">
+          <body>/** 
+ * Component抽象构建角色
+ * @author yang
+ */
+</body>
+        </ownedComment>
+        <ownedOperation xmi:id="_SmxU0IwbEem8JdWhRl5ekg" name="move" visibility="public"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_ShDHUIwbEem8JdWhRl5ekg" name="Car" visibility="package" clientDependency="_Smx74IwbEem8JdWhRl5ekg">
+        <ownedComment xmi:id="_ShDuYIwbEem8JdWhRl5ekg">
+          <body>/** 
+ * ConcreteComponent具体构建角色(真实对象)
+ * @author yang
+ */
+</body>
+        </ownedComment>
+        <interfaceRealization xmi:id="_Smx74IwbEem8JdWhRl5ekg" name="ICar" supplier="_ShBSIIwbEem8JdWhRl5ekg" client="_ShDHUIwbEem8JdWhRl5ekg" contract="_ShBSIIwbEem8JdWhRl5ekg"/>
+        <ownedOperation xmi:id="_Sm4pkIwbEem8JdWhRl5ekg" name="move" visibility="public"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_ShEVcIwbEem8JdWhRl5ekg" name="SuperCar" visibility="package" clientDependency="_Sm5QoIwbEem8JdWhRl5ekg">
+        <ownedComment xmi:id="_ShFjkIwbEem8JdWhRl5ekg">
+          <body>/** 
+ * Decorator装饰角色
+ * @author yang
+ */
+</body>
+        </ownedComment>
+        <ownedAttribute xmi:id="_Sm6ewIwbEem8JdWhRl5ekg" name="car" visibility="protected" type="_ShBSIIwbEem8JdWhRl5ekg" association="_SnyogIwbEem8JdWhRl5ekg"/>
+        <interfaceRealization xmi:id="_Sm5QoIwbEem8JdWhRl5ekg" name="ICar" supplier="_ShBSIIwbEem8JdWhRl5ekg" client="_ShEVcIwbEem8JdWhRl5ekg" contract="_ShBSIIwbEem8JdWhRl5ekg"/>
+        <ownedOperation xmi:id="_Sm7s4IwbEem8JdWhRl5ekg" name="move" visibility="public"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_ShFjkYwbEem8JdWhRl5ekg" name="FlyCar" visibility="package">
+        <ownedComment xmi:id="_ShGxsIwbEem8JdWhRl5ekg">
+          <body>/** 
+ * ConcreteDecorator具体装饰角色
+ * @author yang
+ */
+</body>
+        </ownedComment>
+        <generalization xmi:id="_Sm8T8IwbEem8JdWhRl5ekg" general="_ShEVcIwbEem8JdWhRl5ekg"/>
+        <ownedOperation xmi:id="_Sm87AIwbEem8JdWhRl5ekg" name="fly" visibility="public"/>
+        <ownedOperation xmi:id="_Sm9iEIwbEem8JdWhRl5ekg" name="move" visibility="public"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_ShGxsYwbEem8JdWhRl5ekg" name="WaterCar" visibility="package">
+        <ownedComment xmi:id="_ShH_0IwbEem8JdWhRl5ekg">
+          <body>/** 
+ * ConcreteDecorator具体装饰角色
+ * @author yang
+ */
+</body>
+        </ownedComment>
+        <generalization xmi:id="_Sm-JIIwbEem8JdWhRl5ekg" general="_ShEVcIwbEem8JdWhRl5ekg"/>
+        <ownedOperation xmi:id="_Sm-JIYwbEem8JdWhRl5ekg" name="swim" visibility="public"/>
+        <ownedOperation xmi:id="_Sm_-UIwbEem8JdWhRl5ekg" name="move" visibility="public"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_ShH_0YwbEem8JdWhRl5ekg" name="AiCar" visibility="package">
+        <ownedComment xmi:id="_ShJN8IwbEem8JdWhRl5ekg">
+          <body>/** 
+ * ConcreteDecorator具体装饰角色
+ * @author yang
+ */
+</body>
+        </ownedComment>
+        <generalization xmi:id="_SnBMcIwbEem8JdWhRl5ekg" general="_ShEVcIwbEem8JdWhRl5ekg"/>
+        <ownedOperation xmi:id="_SnBMcYwbEem8JdWhRl5ekg" name="autoMove" visibility="public"/>
+        <ownedOperation xmi:id="_SnBzgIwbEem8JdWhRl5ekg" name="move" visibility="public"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_SnyogIwbEem8JdWhRl5ekg" memberEnd="_Sm6ewIwbEem8JdWhRl5ekg _SnyogYwbEem8JdWhRl5ekg">
+        <ownedEnd xmi:id="_SnyogYwbEem8JdWhRl5ekg" name="SuperCar" type="_ShEVcIwbEem8JdWhRl5ekg" association="_SnyogIwbEem8JdWhRl5ekg"/>
+      </packagedElement>
+    </packagedElement>
+  </packagedElement>
+</uml:Model>

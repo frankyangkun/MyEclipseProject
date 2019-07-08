@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_qb8akM37EdqwVrslYOdUDA" name="staticproxy">
+  <packagedElement xmi:type="uml:Package" xmi:id="_eoUsMIgrEemi-cw_rYK9Hw" name="designmode">
+    <packagedElement xmi:type="uml:Package" xmi:id="_eoUsMYgrEemi-cw_rYK9Hw" name="proxy">
+      <packagedElement xmi:type="uml:Package" xmi:id="_eoUsMogrEemi-cw_rYK9Hw" name="staticproxy">
+        <packagedElement xmi:type="uml:Class" xmi:id="_eoUsM4grEemi-cw_rYK9Hw" name="Client" clientDependency="_wpt1EIgrEemi-cw_rYK9Hw">
+          <ownedComment xmi:id="_eoVTQIgrEemi-cw_rYK9Hw">
+            <body>/** 
+ * 测试静态代理
+ * @author yang
+ */
+</body>
+          </ownedComment>
+          <ownedOperation xmi:id="_epkCUYgrEemi-cw_rYK9Hw" name="main" visibility="public" isStatic="true">
+            <ownedParameter xmi:id="_epkCUogrEemi-cw_rYK9Hw" name="args">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_epkCU4grEemi-cw_rYK9Hw" value="*"/>
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_epkCVIgrEemi-cw_rYK9Hw"/>
+            </ownedParameter>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_eoV6UIgrEemi-cw_rYK9Hw" name="RealStar" clientDependency="_epkpYIgrEemi-cw_rYK9Hw">
+          <ownedComment xmi:id="_eoWhYIgrEemi-cw_rYK9Hw">
+            <body>/** 
+ * 真实角色
+ * @author yang
+ */
+</body>
+          </ownedComment>
+          <interfaceRealization xmi:id="_epkpYIgrEemi-cw_rYK9Hw" name="Star" supplier="_eoXIcIgrEemi-cw_rYK9Hw" client="_eoV6UIgrEemi-cw_rYK9Hw" contract="_eoXIcIgrEemi-cw_rYK9Hw"/>
+          <ownedOperation xmi:id="_eplQcIgrEemi-cw_rYK9Hw" name="confer" visibility="public"/>
+          <ownedOperation xmi:id="_epl3gIgrEemi-cw_rYK9Hw" name="signContract" visibility="public"/>
+          <ownedOperation xmi:id="_epmekIgrEemi-cw_rYK9Hw" name="bookTicket" visibility="public"/>
+          <ownedOperation xmi:id="_epnFoIgrEemi-cw_rYK9Hw" name="sing" visibility="public"/>
+          <ownedOperation xmi:id="_epnssIgrEemi-cw_rYK9Hw" name="collectMoney" visibility="public"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_eoWhYYgrEemi-cw_rYK9Hw" name="ProxyStar" clientDependency="_epoTwIgrEemi-cw_rYK9Hw _tlJ34IgrEemi-cw_rYK9Hw">
+          <ownedAttribute xmi:id="_epo60IgrEemi-cw_rYK9Hw" name="star" visibility="private" type="_eoXIcIgrEemi-cw_rYK9Hw"/>
+          <interfaceRealization xmi:id="_epoTwIgrEemi-cw_rYK9Hw" name="Star" supplier="_eoXIcIgrEemi-cw_rYK9Hw" client="_eoWhYYgrEemi-cw_rYK9Hw" contract="_eoXIcIgrEemi-cw_rYK9Hw"/>
+          <ownedOperation xmi:id="_epph4IgrEemi-cw_rYK9Hw" name="confer" visibility="public"/>
+          <ownedOperation xmi:id="_epqI8IgrEemi-cw_rYK9Hw" name="signContract" visibility="public"/>
+          <ownedOperation xmi:id="_eprXEIgrEemi-cw_rYK9Hw" name="bookTicket" visibility="public"/>
+          <ownedOperation xmi:id="_epr-IIgrEemi-cw_rYK9Hw" name="sing" visibility="public"/>
+          <ownedOperation xmi:id="_epslMIgrEemi-cw_rYK9Hw" name="collectMoney" visibility="public"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_eoXIcIgrEemi-cw_rYK9Hw" name="Star">
+          <ownedOperation xmi:id="_eptMQIgrEemi-cw_rYK9Hw" name="confer" visibility="public"/>
+          <ownedOperation xmi:id="_eptMQYgrEemi-cw_rYK9Hw" name="signContract" visibility="public"/>
+          <ownedOperation xmi:id="_eptzUIgrEemi-cw_rYK9Hw" name="bookTicket" visibility="public"/>
+          <ownedOperation xmi:id="_eptzUYgrEemi-cw_rYK9Hw" name="sing" visibility="public"/>
+          <ownedOperation xmi:id="_eptzUogrEemi-cw_rYK9Hw" name="collectMoney" visibility="public"/>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_tlJ34IgrEemi-cw_rYK9Hw" name="Usage1" supplier="_eoV6UIgrEemi-cw_rYK9Hw" client="_eoWhYYgrEemi-cw_rYK9Hw"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_wpt1EIgrEemi-cw_rYK9Hw" name="Usage2" supplier="_eoXIcIgrEemi-cw_rYK9Hw" client="_eoUsM4grEemi-cw_rYK9Hw"/>
+</uml:Model>

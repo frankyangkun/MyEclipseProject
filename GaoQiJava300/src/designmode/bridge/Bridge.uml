@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_qb8akM37EdqwVrslYOdUDA" name="Bridge">
+  <packagedElement xmi:type="uml:Package" xmi:id="_IB86AItREem8JdWhRl5ekg" name="designmode">
+    <packagedElement xmi:type="uml:Package" xmi:id="_IB_WQItREem8JdWhRl5ekg" name="bridge">
+      <packagedElement xmi:type="uml:Interface" xmi:id="_ICCZkItREem8JdWhRl5ekg" name="Brand">
+        <ownedComment xmi:id="_ICMKkItREem8JdWhRl5ekg">
+          <body>/** 
+ * 品牌
+ * @author yang
+ */
+</body>
+        </ownedComment>
+        <ownedOperation xmi:id="_IDRvsItREem8JdWhRl5ekg" name="sale" visibility="public"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_ICMxoItREem8JdWhRl5ekg" name="Lenovo" visibility="package" clientDependency="_IDa5oItREem8JdWhRl5ekg">
+        <interfaceRealization xmi:id="_IDa5oItREem8JdWhRl5ekg" name="Brand" supplier="_ICCZkItREem8JdWhRl5ekg" client="_ICMxoItREem8JdWhRl5ekg" contract="_ICCZkItREem8JdWhRl5ekg"/>
+        <ownedOperation xmi:id="_IDekAItREem8JdWhRl5ekg" name="sale" visibility="public"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_ICNYsItREem8JdWhRl5ekg" name="Dell" visibility="package" clientDependency="_IDfyIItREem8JdWhRl5ekg">
+        <interfaceRealization xmi:id="_IDfyIItREem8JdWhRl5ekg" name="Brand" supplier="_ICCZkItREem8JdWhRl5ekg" client="_ICNYsItREem8JdWhRl5ekg" contract="_ICCZkItREem8JdWhRl5ekg"/>
+        <ownedOperation xmi:id="_IDfyIYtREem8JdWhRl5ekg" name="sale" visibility="public"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_ICN_wItREem8JdWhRl5ekg" name="Client" clientDependency="_96W3kItTEem8JdWhRl5ekg _-V8nYItTEem8JdWhRl5ekg">
+        <ownedOperation xmi:id="_IF6M8ItREem8JdWhRl5ekg" name="main" visibility="public" isStatic="true">
+          <ownedParameter xmi:id="_IF6M8YtREem8JdWhRl5ekg" name="args">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_IF6M8otREem8JdWhRl5ekg" value="*"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_IF6M84tREem8JdWhRl5ekg"/>
+          </ownedParameter>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_ICOm0ItREem8JdWhRl5ekg" name="Computer2" clientDependency="_JNf_wItUEem8JdWhRl5ekg">
+        <ownedComment xmi:id="_ICP08ItREem8JdWhRl5ekg">
+          <body>/** 
+ * 电脑类型的维度
+ * @author yang
+ */
+</body>
+        </ownedComment>
+        <ownedAttribute xmi:id="_IF9QQItREem8JdWhRl5ekg" name="brand" visibility="protected" type="_ICCZkItREem8JdWhRl5ekg"/>
+        <ownedOperation xmi:id="_IF-eYItREem8JdWhRl5ekg" name="sale" visibility="public"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_ICP08YtREem8JdWhRl5ekg" name="Desktop2" visibility="package">
+        <generalization xmi:id="_IF_FcItREem8JdWhRl5ekg" general="_ICOm0ItREem8JdWhRl5ekg"/>
+        <ownedOperation xmi:id="_IF_sgItREem8JdWhRl5ekg" name="sale" visibility="public"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_ICRDEItREem8JdWhRl5ekg" name="Laptop2" visibility="package">
+        <generalization xmi:id="_IGATkItREem8JdWhRl5ekg" general="_ICOm0ItREem8JdWhRl5ekg"/>
+        <ownedOperation xmi:id="_IGATkYtREem8JdWhRl5ekg" name="sale" visibility="public"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_V86ZAItREem8JdWhRl5ekg" name="Dell" clientDependency="_vtbwwItREem8JdWhRl5ekg">
+        <interfaceRealization xmi:id="_vtbwwItREem8JdWhRl5ekg" name="InterfaceRealization1" supplier="_ICCZkItREem8JdWhRl5ekg" client="_V86ZAItREem8JdWhRl5ekg" contract="_ICCZkItREem8JdWhRl5ekg"/>
+        <ownedOperation xmi:id="_ajF58ItREem8JdWhRl5ekg" name="sale"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_o7OdIItREem8JdWhRl5ekg" name="Lenovo" clientDependency="_wOsDsItREem8JdWhRl5ekg">
+        <interfaceRealization xmi:id="_wOsDsItREem8JdWhRl5ekg" name="InterfaceRealization1" supplier="_ICCZkItREem8JdWhRl5ekg" client="_o7OdIItREem8JdWhRl5ekg" contract="_ICCZkItREem8JdWhRl5ekg"/>
+        <ownedOperation xmi:id="_o7OdIYtREem8JdWhRl5ekg" name="sale"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_6WztwItSEem8JdWhRl5ekg" name="Desktop2" clientDependency="_ZSrwEItTEem8JdWhRl5ekg">
+        <ownedOperation xmi:id="_6WztwYtSEem8JdWhRl5ekg" name="sale"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_9fzfAItSEem8JdWhRl5ekg" name="Lenovo" clientDependency="_9fzfAYtSEem8JdWhRl5ekg">
+        <interfaceRealization xmi:id="_9fzfAYtSEem8JdWhRl5ekg" name="InterfaceRealization1" supplier="_ICCZkItREem8JdWhRl5ekg" client="_9fzfAItSEem8JdWhRl5ekg" contract="_ICCZkItREem8JdWhRl5ekg"/>
+        <ownedOperation xmi:id="_9fzfAotSEem8JdWhRl5ekg" name="sale"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_ET2lsItTEem8JdWhRl5ekg" name="Laptop2" clientDependency="_Zy2d4ItTEem8JdWhRl5ekg">
+        <ownedOperation xmi:id="_ET2lsYtTEem8JdWhRl5ekg" name="sale"/>
+      </packagedElement>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_ZSrwEItTEem8JdWhRl5ekg" name="Dependency1" supplier="_ICOm0ItREem8JdWhRl5ekg" client="_6WztwItSEem8JdWhRl5ekg"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_Zy2d4ItTEem8JdWhRl5ekg" name="Dependency2" supplier="_ICOm0ItREem8JdWhRl5ekg" client="_ET2lsItTEem8JdWhRl5ekg"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_96W3kItTEem8JdWhRl5ekg" name="Usage2" supplier="_ICCZkItREem8JdWhRl5ekg" client="_ICN_wItREem8JdWhRl5ekg"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_-V8nYItTEem8JdWhRl5ekg" name="Usage3" supplier="_ICOm0ItREem8JdWhRl5ekg" client="_ICN_wItREem8JdWhRl5ekg"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_JNf_wItUEem8JdWhRl5ekg" name="Usage1" supplier="_ICCZkItREem8JdWhRl5ekg" client="_ICOm0ItREem8JdWhRl5ekg"/>
+</uml:Model>

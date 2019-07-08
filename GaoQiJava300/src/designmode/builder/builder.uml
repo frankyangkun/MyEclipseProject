@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_qb8akM37EdqwVrslYOdUDA" name="builder">
+  <packagedElement xmi:type="uml:Package" xmi:id="_OzFZQIdkEemr-bfnZVi9dA" name="designmode">
+    <packagedElement xmi:type="uml:Package" xmi:id="_OzFZQYdkEemr-bfnZVi9dA" name="builder">
+      <packagedElement xmi:type="uml:Class" xmi:id="_OzGnYYdkEemr-bfnZVi9dA" name="OrbitalModule" visibility="package">
+        <ownedAttribute xmi:id="_O0tw8IdkEemr-bfnZVi9dA" name="name" visibility="private">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
+        <ownedOperation xmi:id="_O0uYAIdkEemr-bfnZVi9dA" name="getName" visibility="public">
+          <ownedParameter xmi:id="_O0uYAYdkEemr-bfnZVi9dA" name="return" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_O0uYAodkEemr-bfnZVi9dA" name="setName" visibility="public">
+          <ownedParameter xmi:id="_O0uYA4dkEemr-bfnZVi9dA" name="name">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_OzHOcIdkEemr-bfnZVi9dA" name="Engine" visibility="package">
+        <ownedAttribute xmi:id="_O0wNMIdkEemr-bfnZVi9dA" name="name" visibility="private">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
+        <ownedOperation xmi:id="_O0w0QIdkEemr-bfnZVi9dA" name="getName" visibility="public">
+          <ownedParameter xmi:id="_O0w0QYdkEemr-bfnZVi9dA" name="return" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_O0xbUIdkEemr-bfnZVi9dA" name="setName" visibility="public">
+          <ownedParameter xmi:id="_O0xbUYdkEemr-bfnZVi9dA" name="name">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_OzHOcYdkEemr-bfnZVi9dA" name="EscapeTower" visibility="package">
+        <ownedAttribute xmi:id="_O0ypcIdkEemr-bfnZVi9dA" name="name" visibility="private">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
+        <ownedOperation xmi:id="_O0z3kIdkEemr-bfnZVi9dA" name="getName" visibility="public">
+          <ownedParameter xmi:id="_O0z3kYdkEemr-bfnZVi9dA" name="return" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_O01swIdkEemr-bfnZVi9dA" name="setName" visibility="public">
+          <ownedParameter xmi:id="_O01swYdkEemr-bfnZVi9dA" name="name">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_5XqSIIdmEemr-bfnZVi9dA" name="Class1"/>
+    </packagedElement>
+  </packagedElement>
+</uml:Model>
